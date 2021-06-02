@@ -163,6 +163,14 @@ header {
   margin-bottom: 2.5em;
 }
 
+.fonctionnement .button-1:hover, .button-2:hover, .button-3:hover {
+  background-color: #f5edff;
+}
+
+.fonctionnement .button-1:hover .fas, .button-2:hover .fas, .button-3:hover .fas {
+  color: #9356dc;
+}
+
 .fonctionnement .number {
   width: 1.7em;
   height: 1.7em;
@@ -354,8 +362,18 @@ header {
   font-size: 1.5em;
 }
 
-.vignette-buttom-right .color {
+.vignette-buttom-right .fas {
   display: none;
+  color: #9356dc;
+  font-size: 1.5em;
+}
+
+.vignette-buttom-right .far:hover {
+  display: none;
+}
+
+.vignette-buttom-right .far:hover .vignette-buttom-right .fas {
+  display: block;
 }
 
 /*-----Footer-----*/
