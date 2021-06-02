@@ -1,3 +1,26 @@
+/*---------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+                Variables
+-----------------------------------------------                
+-----------------------------------------------
+---------------------------------------------*/
+
+$gradien-color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 77%);
+
+$box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
+
+
+
+/*---------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+                Index
+-----------------------------------------------                
+-----------------------------------------------
+---------------------------------------------*/
+
+
 /*---------Body---------*/
 
 body {
@@ -73,16 +96,13 @@ header {
     height: 3em;
     min-width: 13em;
     margin-top: 1.5em;
-    background: rgb(255,121,218);
-    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 77%);
+    background: $gradien-color;
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -webkit-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -moz-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
+    box-shadow: $box-shadow;
 }
 
 .button p {
@@ -111,9 +131,7 @@ header {
     position: relative;
     text-decoration: none;
     color: black;
-    box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -webkit-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -moz-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79); 
+    box-shadow: $box-shadow;
 }
 
 .fonctionnement .button-3 {
@@ -189,10 +207,7 @@ header {
     width: 82%;
     background-color: white;
     border-radius: 1em;
-    box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -webkit-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
-    -moz-box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79); 
-
+    box-shadow: $box-shadow;
 }
 
 .v4 {
