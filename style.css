@@ -1,0 +1,416 @@
+/*---------Body---------*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*---------Header---------*/
+header {
+  height: 5em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 50%;
+}
+
+.logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*---------Localisation---------*/
+.localisation {
+  width: 100%;
+  height: 20em;
+  background-color: #f6f6f6;
+}
+
+.localisation-top {
+  height: 4em;
+  width: 100%;
+  background-color: #eaeaea;
+  background: #b9b9b9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), color-stop(8%, #eaeaea));
+  background: linear-gradient(180deg, #b9b9b9 0%, #eaeaea 8%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+.localisation-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60%;
+  margin-top: 1em;
+}
+
+.localisation-bottom h1, p {
+  text-align: center;
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+.button {
+  height: 3em;
+  min-width: 13em;
+  margin-top: 1.5em;
+  background: #ff79da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(77%, #9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 77%);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
+
+.button p {
+  color: white;
+  margin: 0;
+}
+
+/*---------Fonctionnement---------*/
+.fonctionnement {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.fonctionnement .button-1, .button-2, .button-3 {
+  width: 86%;
+  height: 4em;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5em;
+  margin-top: 1.5em;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
+
+.fonctionnement .button-3 {
+  margin-bottom: 2.5em;
+}
+
+.fonctionnement .number {
+  width: 1.7em;
+  height: 1.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356dc;
+  border-radius: 5em;
+  position: absolute;
+  left: -0.7em;
+}
+
+.fonctionnement .number p {
+  margin: 0;
+  color: white;
+}
+
+.fonctionnement .fas {
+  margin-left: 2em;
+  color: #7e7e7e;
+}
+
+.fonctionnement .description {
+  margin-left: 1em;
+}
+
+/*---------Restaurants---------*/
+.restaurants {
+  height: 76.5em;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants .title {
+  height: 4.5em;
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.restaurants .title h1 {
+  margin: 0;
+  margin-top: 1.5em;
+}
+
+/*-----Restaurants-----*/
+.vignettes {
+  height: 92%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vignette-in {
+  height: 23%;
+  width: 82%;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
+
+.v4 {
+  margin-bottom: 2em;
+}
+
+.vignette-in-top {
+  width: 100%;
+  height: 70%;
+}
+
+.vignette-in-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em 1em 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new {
+  position: relative;
+}
+
+.new-in {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5.2em;
+  height: 2em;
+  border-radius: 0.2em;
+}
+
+.new-in p {
+  margin: 0;
+  color: #008766;
+}
+
+.vignette-in-buttom {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vignette-buttom-left {
+  height: 100%;
+  width: 70%;
+  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vignette-buttom-left h3 {
+  margin: 0;
+}
+
+.vignette-buttom-left .buttom {
+  font-weight: lighter;
+  margin-top: 0.2em;
+}
+
+.vignette-buttom-right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vignette-buttom-right .far {
+  font-size: 1.5em;
+}
+
+.vignette-buttom-right .color {
+  display: none;
+}
+
+/*-----Footer-----*/
+footer {
+  height: 12.5em;
+  width: 100%;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-in {
+  width: 82%;
+  height: 77%;
+}
+
+.footer-in img {
+  width: 8em;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-bottom: 1em;
+}
+
+.logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.1em;
+}
+
+.logo-text p {
+  margin: 0;
+  margin-left: 0.5em;
+  color: white;
+}
+
+.fa-utensils {
+  font-size: 0.9em;
+  color: white;
+}
+
+.fa-hands-helping {
+  font-size: 0.6em;
+  color: white;
+}
+
+.text-in {
+  text-align: left;
+  margin-top: 0;
+  color: white;
+}
+
+.one {
+  margin-top: 0.3em;
+}
+/*# sourceMappingURL=style.css.map */
