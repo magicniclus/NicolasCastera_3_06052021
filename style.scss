@@ -12,6 +12,21 @@ $violet: #9356dc;
 
 $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
 
+/*---------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+                Mixin
+-----------------------------------------------                
+-----------------------------------------------
+---------------------------------------------*/
+
+@mixin midbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /*---------------------------------------------
@@ -38,18 +53,34 @@ body {
 header {
     height: 5em;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include midbox;
 }
 
 .logo {
     width: 50%;
 }
-
+ 
 .logo img {
     width: 100%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 700px){
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .logo img {
+        width: 25%;
+    }
 }
 
 
@@ -67,10 +98,7 @@ header {
     background-color: #eaeaea;
     background: rgb(185,185,185);
     background: linear-gradient(180deg, rgba(185,185,185,1) 0%, rgba(234,234,234,1) 8%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include midbox;
 }
 
 .map {
@@ -79,10 +107,7 @@ header {
 }
 
 .localisation-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include midbox;
     flex-direction: column;
     height: 60%;
     margin-top: 1em;
@@ -100,11 +125,9 @@ header {
     margin-top: 1.5em;
     background: $gradien-color;
     border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include midbox;
     box-shadow: $box-shadow;
+    text-decoration: none; 
 }
 
 .button p {
@@ -151,10 +174,7 @@ header {
 .fonctionnement .number {
     width: 1.7em;
     height: 1.7em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include midbox;
     background-color: $violet;
     border-radius: 5em;
     position: absolute;
@@ -245,9 +265,7 @@ header {
     top: 0.7em;
     right: 0.7em;
     background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include midbox;
     width: 5.2em;
     height: 2em;
     border-radius: 0.2em;
@@ -284,9 +302,7 @@ header {
 
 .vignette-buttom-right {
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include midbox;
 }
 
 .vignette-buttom-right .far {
@@ -315,10 +331,7 @@ footer {
     height: 12.5em;
     width: 100%;
     background-color: #353535;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include midbox;
 }
 
 .footer-in {
