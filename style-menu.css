@@ -149,4 +149,14 @@ header img {
   margin-top: 0.4em;
   background-color: #99e2d0;
 }
+
+.vignette {
+  width: 100%;
+  height: 4.25em;
+  background-color: white;
+  margin-top: 0.75em;
+  border-radius: 1em;
+  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+          box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
 /*# sourceMappingURL=style-menu.css.map */
