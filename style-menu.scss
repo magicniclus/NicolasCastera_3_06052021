@@ -5,9 +5,6 @@
 -----------------------------------------------                
 -----------------------------------------------
 ---------------------------------------------*/
-
-$gradien-color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 77%);
-
 $violet: #9356dc;
 
 $grey: #f6f6f6;
@@ -104,7 +101,6 @@ header {
 /*---------Menu content---------*/
 
 .menu-content {
-    height: 72.5em;
     background-color: $grey;
     display: flex;
     flex-wrap: wrap;
@@ -132,9 +128,8 @@ header {
     }
 }
 
-.entrees {
+.entrees, .plats, .desserts{
     width: 90%;
-    height: 1.5em;
     margin-top: 2.5em;
     
     h4 {
@@ -152,9 +147,120 @@ header {
 
 .vignette {
     width: 100%;
-    height: 4.25em;
+    padding-bottom: 1em;
     background-color: white;
     margin-top: 0.75em;
     border-radius: 1em;
     box-shadow: $box-shadow;
+
+    a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .vignette-in {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .vignette-in .vignette-in-top h3 {
+        margin: 0;
+        padding-top: 0.6em;
+    }
+
+    .vignette-in .vignette-in-buttom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .vignette-in .vignette-in-buttom p {
+        margin: 0;
+        padding-top: 0.2em;
+    }
+
+    .vignette-in .vignette-in-buttom .bold {
+        font-weight: bold;
+    }
+
+    .vignette-in .vignette-in-buttom .small {
+        font-weight: lighter;
+    }
 }
+
+.button {
+    width: 50%;
+    height: 3.5em;
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 77%);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 2em;
+    color: white;
+    @include midbox()
+    box-shadow: $box-shadow;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+/*-----Footer-----*/
+
+footer {
+    height: 12.5em;
+    width: 100%;
+    background-color: #353535;
+    @include midbox;
+
+    .footer-in {
+        width: 82%;
+        height: 77%;
+    }
+
+    .footer-in a {
+        text-decoration: none;
+    }
+    
+    .footer-in img {
+        width: 8em;
+        filter: invert(1);
+        margin-bottom: 1em;
+    }
+    
+    .logo-text {
+        display: flex;
+        align-items: center;
+        margin-top: 0.1em;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        margin-left: 0.5em;
+        color: white;
+    }
+    
+    .fa-utensils {
+        font-size: 0.9em;
+        color: white;
+    }
+    
+    .fa-hands-helping {
+        font-size: 0.6em;
+        color: white;
+    }
+    
+    .text-in {
+        text-align: left;
+        margin-top: 0;
+        color: white;
+    }
+    
+    .one {
+        margin-bottom: 0;
+    }
+
+}
+
+

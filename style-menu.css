@@ -90,7 +90,6 @@ header img {
 
 /*---------Menu content---------*/
 .menu-content {
-  height: 72.5em;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,18 +131,17 @@ header img {
   color: black;
 }
 
-.entrees {
+.entrees, .plats, .desserts {
   width: 90%;
-  height: 1.5em;
   margin-top: 2.5em;
 }
 
-.entrees h4 {
+.entrees h4, .plats h4, .desserts h4 {
   font-weight: lighter;
   margin: 0;
 }
 
-.entrees .lign {
+.entrees .lign, .plats .lign, .desserts .lign {
   height: 0.2em;
   width: 2.5em;
   margin-top: 0.4em;
@@ -152,11 +150,148 @@ header img {
 
 .vignette {
   width: 100%;
-  height: 4.25em;
+  padding-bottom: 1em;
   background-color: white;
   margin-top: 0.75em;
   border-radius: 1em;
   -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
           box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
+
+.vignette a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.vignette .vignette-in {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.vignette .vignette-in .vignette-in-top h3 {
+  margin: 0;
+  padding-top: 0.6em;
+}
+
+.vignette .vignette-in .vignette-in-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vignette .vignette-in .vignette-in-buttom p {
+  margin: 0;
+  padding-top: 0.2em;
+}
+
+.vignette .vignette-in .vignette-in-buttom .bold {
+  font-weight: bold;
+}
+
+.vignette .vignette-in .vignette-in-buttom .small {
+  font-weight: lighter;
+}
+
+.button {
+  width: 50%;
+  height: 3.5em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(77%, #9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 77%);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 2em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+          box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*-----Footer-----*/
+footer {
+  height: 12.5em;
+  width: 100%;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-in {
+  width: 82%;
+  height: 77%;
+}
+
+footer .footer-in a {
+  text-decoration: none;
+}
+
+footer .footer-in img {
+  width: 8em;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-bottom: 1em;
+}
+
+footer .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.1em;
+}
+
+footer .logo-text p {
+  margin: 0;
+  margin-left: 0.5em;
+  color: white;
+}
+
+footer .fa-utensils {
+  font-size: 0.9em;
+  color: white;
+}
+
+footer .fa-hands-helping {
+  font-size: 0.6em;
+  color: white;
+}
+
+footer .text-in {
+  text-align: left;
+  margin-top: 0;
+  color: white;
+}
+
+footer .one {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style-menu.css.map */
