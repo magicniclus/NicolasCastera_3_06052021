@@ -288,10 +288,6 @@ header img {
   font-size: 0em;
 }
 
-.vignette .vignette-in .vignette-in-top {
-  text-overflow: ellipsis;
-}
-
 .vignette .vignette-in .vignette-in-top h3 {
   margin: 0;
 }
