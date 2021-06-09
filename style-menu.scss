@@ -26,7 +26,55 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
     align-items: center;
 }
 
+/*---------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+                Animations
+-----------------------------------------------                
+-----------------------------------------------
+---------------------------------------------*/
 
+@keyframes slideDown {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes hello {
+    from {
+        font-size: 0em;
+        transform: rotate(0deg);
+    }
+
+    to {
+        font-size: 1.5em;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border  {
+    from {
+        border-radius: 15px;
+    }
+
+    to {
+        border-radius: 15px 0 0 15px;
+    }
+}
 
 
 
@@ -171,7 +219,6 @@ header {
     } 
 
     .vignette-in-left:hover .vignette-in-right{
-        animation: slideDown;
         animation-duration: 1s;
     }
 
@@ -181,15 +228,13 @@ header {
         height: 100%;
         background-color: #99e2d0;
         border-radius: 0 1em 1em 0;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    @keyframes slideDown {
-        from {
-            width: 0%;
-        }
-    
-        to {
-            width: 30%;
+        .fas {
+            color: white;
+            font-size: 0em;
         }
     }
 
@@ -222,6 +267,27 @@ header {
     .vignette-in .vignette-in-buttom .small {
         font-weight: lighter;
     }
+}
+
+.vignette:hover {
+    .vignette-in-left {
+        animation-name: slideIn, border;
+        animation-duration: 1s, 0s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.21,.61,1,.57), linear;
+    }
+
+    .vignette-in-right {
+        animation: slideDown 1s forwards;
+        animation-timing-function: cubic-bezier(.41,.81,0.60,.67);
+       
+        .fas {
+        animation: hello 0.5s forwards;
+        
+        }
+    }
+
+    
 }
 
 .button {

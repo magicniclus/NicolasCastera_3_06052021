@@ -15,6 +15,92 @@
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
+                Animations
+-----------------------------------------------                
+-----------------------------------------------
+---------------------------------------------*/
+@-webkit-keyframes slideDown {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes slideDown {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes hello {
+  from {
+    font-size: 0em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    font-size: 1.5em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes hello {
+  from {
+    font-size: 0em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    font-size: 1.5em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes border {
+  from {
+    border-radius: 15px;
+  }
+  to {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+@keyframes border {
+  from {
+    border-radius: 15px;
+  }
+  to {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+/*---------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
                 Menu
 -----------------------------------------------                
 -----------------------------------------------
@@ -183,8 +269,6 @@ header img {
 }
 
 .vignette .vignette-in-left:hover .vignette-in-right {
-  -webkit-animation: slideDown;
-          animation: slideDown;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
@@ -194,24 +278,20 @@ header img {
   height: 100%;
   background-color: #99e2d0;
   border-radius: 0 1em 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@-webkit-keyframes slideDown {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 30%;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 30%;
-  }
+.vignette .vignette-in-right .fas {
+  color: white;
+  font-size: 0em;
 }
 
 .vignette .vignette-in .vignette-in-top h3 {
@@ -238,6 +318,29 @@ header img {
 
 .vignette .vignette-in .vignette-in-buttom .small {
   font-weight: lighter;
+}
+
+.vignette:hover .vignette-in-left {
+  -webkit-animation-name: slideIn, border;
+          animation-name: slideIn, border;
+  -webkit-animation-duration: 1s, 0s;
+          animation-duration: 1s, 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57), linear;
+          animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57), linear;
+}
+
+.vignette:hover .vignette-in-right {
+  -webkit-animation: slideDown 1s forwards;
+          animation: slideDown 1s forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
+          animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
+}
+
+.vignette:hover .vignette-in-right .fas {
+  -webkit-animation: hello 0.5s forwards;
+          animation: hello 0.5s forwards;
 }
 
 .button {
