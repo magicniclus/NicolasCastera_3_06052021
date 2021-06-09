@@ -248,12 +248,6 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*
-    .vignette-in{
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    */
 }
 
 .vignette a {
@@ -294,6 +288,10 @@ header img {
   font-size: 0em;
 }
 
+.vignette .vignette-in .vignette-in-top {
+  text-overflow: ellipsis;
+}
+
 .vignette .vignette-in .vignette-in-top h3 {
   margin: 0;
 }
@@ -323,8 +321,8 @@ header img {
 .vignette:hover .vignette-in-left {
   -webkit-animation-name: slideIn, border;
           animation-name: slideIn, border;
-  -webkit-animation-duration: 1s, 0s;
-          animation-duration: 1s, 0s;
+  -webkit-animation-duration: 0.5s, 0s;
+          animation-duration: 0.5s, 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57), linear;
@@ -332,8 +330,8 @@ header img {
 }
 
 .vignette:hover .vignette-in-right {
-  -webkit-animation: slideDown 1s forwards;
-          animation: slideDown 1s forwards;
+  -webkit-animation: slideDown 0.5s forwards;
+          animation: slideDown 0.5s forwards;
   -webkit-animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
           animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
 }

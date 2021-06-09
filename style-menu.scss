@@ -239,12 +239,10 @@ header {
     }
 
 
-    /*
-    .vignette-in{
-        padding-left: 1em;
-        padding-right: 1em;
+    .vignette-in .vignette-in-top {
+        
+        text-overflow: ellipsis;
     }
-    */
 
     .vignette-in .vignette-in-top h3 {
         margin: 0;
@@ -272,13 +270,13 @@ header {
 .vignette:hover {
     .vignette-in-left {
         animation-name: slideIn, border;
-        animation-duration: 1s, 0s;
+        animation-duration: 0.5s, 0s;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(.21,.61,1,.57), linear;
     }
 
     .vignette-in-right {
-        animation: slideDown 1s forwards;
+        animation: slideDown 0.5s forwards;
         animation-timing-function: cubic-bezier(.41,.81,0.60,.67);
        
         .fas {
