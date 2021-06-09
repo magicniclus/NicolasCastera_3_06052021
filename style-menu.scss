@@ -28,6 +28,8 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
 
 
 
+
+
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
@@ -128,7 +130,7 @@ header {
     }
 }
 
-.entrees, .plats, .desserts{
+.entrees, .plats, .desserts {
     width: 90%;
     margin-top: 2.5em;
     
@@ -147,11 +149,14 @@ header {
 
 .vignette {
     width: 100%;
-    padding-bottom: 1em;
+    height: 4.5em;
     background-color: white;
     margin-top: 0.75em;
     border-radius: 1em;
     box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    
 
     a {
         text-decoration: none;
@@ -159,14 +164,45 @@ header {
         cursor: pointer;
     }
 
-    .vignette-in {
+    .vignette-in-left {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+    } 
+
+    .vignette-in-left:hover .vignette-in-right{
+        animation: slideDown;
+        animation-duration: 1s;
+    }
+
+
+    .vignette-in-right {
+        width: 0%;
+        height: 100%;
+        background-color: #99e2d0;
+        border-radius: 0 1em 1em 0;
+    }
+
+    @keyframes slideDown {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 30%;
+        }
+    }
+
+
+    /*
+    .vignette-in{
         padding-left: 1em;
         padding-right: 1em;
     }
+    */
 
     .vignette-in .vignette-in-top h3 {
         margin: 0;
-        padding-top: 0.6em;
     }
 
     .vignette-in .vignette-in-buttom {
@@ -196,7 +232,7 @@ header {
     margin-bottom: 3em;
     border-radius: 2em;
     color: white;
-    @include midbox()
+    @include midbox();
     box-shadow: $box-shadow;
 
     a {
