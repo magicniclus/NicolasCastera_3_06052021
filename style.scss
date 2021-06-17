@@ -34,7 +34,25 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
 -----------------------------------------------                
 -----------------------------------------------
 ---------------------------------------------*/
+@keyframes loaderMain {
+    from {
+        z-index: 3;
+    }
 
+    to {
+        z-index: 1;
+    }
+}
+
+@keyframes loaderMain2{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
 
 /*---------------------------------------------
 -----------------------------------------------
@@ -55,16 +73,26 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 2;
+    animation-name: loaderMain2;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 main {
     width: 100%;
-    height: 700px;
+    height: 100%;
     background-color: #f2f2f2; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 3;
+    animation-name: loaderMain;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
 
 
