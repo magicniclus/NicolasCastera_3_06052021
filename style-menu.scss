@@ -251,6 +251,7 @@ header {
     box-shadow: $box-shadow;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
 
     a {
@@ -343,6 +344,18 @@ header {
         a .vignette-in-buttom .small{
             width: 80%;
         }
+    }
+}
+
+@media screen and (max-width: 390px){
+    .bold .vignette-in-top{
+        max-width: 15em;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .bold .vignette-in-buttom .small{
+        max-width: 10em;
     }
 }
 

@@ -327,6 +327,9 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .vignette a {
@@ -435,6 +438,18 @@ header img {
 
 .bold:hover .vignette-in-left a .vignette-in-buttom .small {
   width: 80%;
+}
+
+@media screen and (max-width: 390px) {
+  .bold .vignette-in-top {
+    max-width: 15em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .bold .vignette-in-buttom .small {
+    max-width: 10em;
+  }
 }
 
 .button {
