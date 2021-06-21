@@ -54,6 +54,16 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
     }
 }
 
+@keyframes slideIn2 {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 71%;
+    }
+}
+
 @keyframes hello {
     from {
         font-size: 0em;
@@ -321,8 +331,19 @@ header {
         
         }
     }
+}
 
-    
+.bold:hover {
+    .vignette-in-left {
+        animation-name: slideIn2;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.21,.61,1,.57);
+
+        a .vignette-in-buttom .small{
+            width: 80%;
+        }
+    }
 }
 
 .button {

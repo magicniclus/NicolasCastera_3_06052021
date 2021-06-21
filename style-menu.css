@@ -54,6 +54,24 @@
   }
 }
 
+@-webkit-keyframes slideIn2 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 71%;
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 71%;
+  }
+}
+
 @-webkit-keyframes hello {
   from {
     font-size: 0em;
@@ -402,6 +420,21 @@ header img {
 .vignette:hover .vignette-in-right .fas {
   -webkit-animation: hello 0.5s forwards;
           animation: hello 0.5s forwards;
+}
+
+.bold:hover .vignette-in-left {
+  -webkit-animation-name: slideIn2;
+          animation-name: slideIn2;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57);
+          animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57);
+}
+
+.bold:hover .vignette-in-left a .vignette-in-buttom .small {
+  width: 80%;
 }
 
 .button {
