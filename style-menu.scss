@@ -60,7 +60,7 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
     }
 
     to {
-        width: 71%;
+        width: 80%;
     }
 }
 
@@ -350,6 +350,12 @@ header {
 @media screen and (max-width: 390px){
     .bold .vignette-in-top{
         max-width: 15em;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .bold .vignette-in-top{
+        max-width: 12em;
     }
 }
 
