@@ -368,6 +368,10 @@ header img {
           flex-direction: column;
 }
 
+.contener .contener-in-left .top {
+  padding-bottom: 0.5em;
+}
+
 .contener .contener-in-left .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
