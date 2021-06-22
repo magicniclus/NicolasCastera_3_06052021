@@ -386,6 +386,10 @@ header img {
   padding-top: 0;
 }
 
+.contener .contener-in-left .bottom .exeption {
+  width: 67%;
+}
+
 .contener .contener-in-right {
   background-color: #99e2d0;
   display: -webkit-box;
@@ -446,8 +450,6 @@ header img {
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 .cont2 {
@@ -459,8 +461,8 @@ header img {
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .cont3 {
@@ -472,8 +474,8 @@ header img {
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 /*-----Button-----*/

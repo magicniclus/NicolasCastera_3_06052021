@@ -294,6 +294,10 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
             h1{
                 padding-top: 0;
             }
+
+            .exeption {
+                width: 67%;
+            }
         }
     }
 
@@ -344,7 +348,6 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2s;
 }
 
 .cont2 {
@@ -352,7 +355,7 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2.2s;
+    animation-delay: 0.2s;
 }
 
 .cont3 {
@@ -360,7 +363,7 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2.4s;
+    animation-delay: 0.4s;
 }
 
 /*-----Button-----*/
