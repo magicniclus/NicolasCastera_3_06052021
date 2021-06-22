@@ -78,11 +78,11 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
 
 @keyframes border  {
     from {
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
     to {
-        border-radius: 15px 0 0 15px;
+        border-radius: 20px 0 0 20px;
     }
 }
 
@@ -126,7 +126,13 @@ body {
     h1 {
         margin: 0;
     }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
+
 
 /*---------Header---------*/
 
@@ -292,7 +298,7 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     }
 
     .contener-in-right {
-        background-color: black;
+        background-color: #99e2d0;
         display: flex;
         justify-content: center;
         align-items: center;
