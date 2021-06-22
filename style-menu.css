@@ -160,6 +160,10 @@ body {
   height: 300px;
 }
 
+.main h1 {
+  margin: 0;
+}
+
 /*---------Header---------*/
 header {
   height: 3.8em;
@@ -313,50 +317,16 @@ header img {
           animation-delay: 0.4s;
 }
 
-.vignette {
+/*-----Vignettes-----*/
+.contain {
   width: 100%;
-  height: 4.5em;
-  background-color: white;
-  margin-top: 0.75em;
-  border-radius: 1em;
-  -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
-          box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.vignette a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-.vignette .vignette-in-left {
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-}
-
-.vignette .vignette-in-left:hover .vignette-in-right {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.vignette .vignette-in-right {
-  width: 0%;
   height: 100%;
-  background-color: #99e2d0;
-  border-radius: 0 1em 1em 0;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -365,93 +335,143 @@ header img {
           justify-content: center;
 }
 
-.vignette .vignette-in-right .fas {
-  color: white;
-  font-size: 0em;
+.contener {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 5px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.vignette .vignette-in .vignette-in-top h3 {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.contener .contener-in-left {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.vignette .vignette-in .vignette-in-buttom {
+.contener .contener-in-left .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
-.vignette .vignette-in .vignette-in-buttom p {
-  margin: 0;
-  padding-top: 0.2em;
+.contener .contener-in-left .bottom .prix {
+  text-overflow: initial;
+}
+
+.contener .contener-in-left .bottom h1 {
+  padding-top: 0;
+}
+
+.contener .contener-in-right {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 20px 20px 0;
+}
+
+.contener .contener-in-right .fas {
+  color: white;
+  font-size: 0em;
+}
+
+.contener h1 {
+  max-height: 1em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  max-width: 80%;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
-.vignette .vignette-in .vignette-in-buttom .bold {
-  font-weight: bold;
-}
-
-.vignette .vignette-in .vignette-in-buttom .small {
-  font-weight: lighter;
-}
-
-.vignette:hover .vignette-in-left {
+.contain:hover .contener-in-left {
   -webkit-animation-name: slideIn, border;
           animation-name: slideIn, border;
-  -webkit-animation-duration: 0.5s, 0s;
-          animation-duration: 0.5s, 0s;
+  -webkit-animation-duration: 0.2s, 0s;
+          animation-duration: 0.2s, 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57), linear;
-          animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57), linear;
+  -webkit-animation-timing-function: linear, linear;
+          animation-timing-function: linear, linear;
 }
 
-.vignette:hover .vignette-in-right {
-  -webkit-animation: slideDown 0.5s forwards;
-          animation: slideDown 0.5s forwards;
+.contain:hover .contener-in-right {
+  -webkit-animation: slideDown 0.2s forwards;
+          animation: slideDown 0.2s forwards;
   -webkit-animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
           animation-timing-function: cubic-bezier(0.41, 0.81, 0.6, 0.67);
 }
 
-.vignette:hover .vignette-in-right .fas {
+.contain:hover .contener-in-right .fas {
   -webkit-animation: hello 0.5s forwards;
           animation: hello 0.5s forwards;
 }
 
-.bold:hover .vignette-in-left {
-  -webkit-animation-name: slideIn2;
-          animation-name: slideIn2;
+.cont1 {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57);
-          animation-timing-function: cubic-bezier(0.21, 0.61, 1, 0.57);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
-.bold:hover .vignette-in-left a .vignette-in-buttom .small {
-  width: 80%;
+.cont2 {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
-@media screen and (max-width: 390px) {
-  .bold .vignette-in-top {
-    max-width: 15em;
-  }
+.cont3 {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
-@media screen and (max-width: 390px) {
-  .bold .vignette-in-buttom .small {
-    max-width: 10em;
-  }
-}
-
+/*-----Button-----*/
 .button {
   width: 50%;
   height: 3.5em;
