@@ -196,6 +196,7 @@ header {
     img {
             width: 50%;
             object-fit: cover;
+            max-width: 15em;
     }
 }
 
@@ -232,6 +233,7 @@ header {
 
 .tittle {
     width: 90%;
+    max-width: 50em;
     height: 1.5em;
     display: flex;
     align-items: center;
@@ -290,6 +292,7 @@ header {
 
 .entrees, .plats, .desserts {
     width: 90%;
+    max-width: 50em;
     margin-top: 2.5em;
     opacity: 0;
     
@@ -452,6 +455,7 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
 
 .button {
     width: 50%;
+    max-width: 15em;
     height: 3.5em;
     background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 77%);
     margin-top: 3em;
@@ -464,6 +468,14 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     a {
         text-decoration: none;
         color: white;
+    }
+}
+
+.button:hover {
+    box-shadow: -3px 11px 21px -11px rgba(0,0,0,1);
+
+    a {
+        font-size: 1.1em;
     }
 }
 
@@ -523,6 +535,14 @@ footer {
         margin-bottom: 0;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    .footer-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
