@@ -138,6 +138,42 @@
   }
 }
 
+@-webkit-keyframes heart1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes heart1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes heart2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heart2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
@@ -260,10 +296,48 @@ header img {
   font-style: italic;
 }
 
-.tittle .far {
-  margin-right: 0.5em;
-  font-size: 1.5em;
-  color: black;
+.tittle .heart {
+  width: 1.5em;
+  position: relative;
+}
+
+.tittle .heart .heart-1, .tittle .heart heart-2 {
+  position: absolute;
+  top: 0;
+}
+
+.tittle .heart .heart-1 {
+  opacity: 1;
+}
+
+.tittle .heart .heart-1:hover {
+  -webkit-animation-name: heart1;
+          animation-name: heart1;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.tittle .heart .heart-2 {
+  opacity: 0;
+}
+
+.tittle .heart .heart-2:hover {
+  -webkit-animation-name: heart2;
+          animation-name: heart2;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.tittle .heart img {
+  width: 1.5em;
 }
 
 .entrees, .plats, .desserts {

@@ -98,7 +98,25 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
     }
 }
 
+@keyframes heart1 {
+    from {
+        opacity: 1;
+    }
 
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes heart2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 /*---------------------------------------------
 -----------------------------------------------
@@ -203,11 +221,43 @@ header {
         font-style: italic;
     }
 
-    .far {
-        margin-right: 0.5em;
-        font-size: 1.5em;
-        color: black;
+    .heart {
+        width: 1.5em;
+        position: relative;
+
+        .heart-1, heart-2{
+            position: absolute;
+            top: 0;
+        }
+
+        .heart-1 {
+            opacity: 1;
+        }
+
+        .heart-1:hover {
+            animation-name: heart1;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        .heart-2 {
+            opacity: 0;
+        }
+
+        .heart-2:hover {
+            animation-name: heart2;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        img {
+            width: 1.5em;
+        }
     }
+
+    
 }
 
 .entrees, .plats, .desserts {
