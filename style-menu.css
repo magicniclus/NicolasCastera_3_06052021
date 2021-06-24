@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
@@ -273,7 +274,7 @@ header img {
 }
 
 /*---------Img menu---------*/
-.img-menu {
+.sens {
   height: 15.5em;
   width: 100%;
   background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -289,7 +290,30 @@ header img {
           align-items: flex-end;
 }
 
-.img-menu .bottom-style {
+.sens .bottom-style {
+  height: 2.2em;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+}
+
+.enchanté {
+  height: 15.5em;
+  width: 100%;
+  background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.enchanté .bottom-style {
   height: 2.2em;
   width: 100%;
   background-color: #f6f6f6;
@@ -600,6 +624,19 @@ header img {
           animation-timing-function: linear;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+}
+
+.cont4 {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 /*-----Button-----*/

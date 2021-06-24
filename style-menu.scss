@@ -203,7 +203,7 @@ header {
 
 /*---------Img menu---------*/
 
-.img-menu {
+.sens{
     height: 15.5em;
     width: 100%;
     background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -218,7 +218,24 @@ header {
         background-color: $grey;
         border-radius: 30px 30px 0 0;
     }
-}    
+} 
+
+.enchanté{
+    height: 15.5em;
+    width: 100%;
+    background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .bottom-style {
+        height: 2.2em;
+        width: 100%;
+        background-color: $grey;
+        border-radius: 30px 30px 0 0;
+    }
+}   
 
 
 /*---------Menu content---------*/
@@ -449,6 +466,14 @@ box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.75);
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 0.4s;
+}
+
+.cont4 {
+    animation-name: opacity;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 0.6s;
 }
 
 /*-----Button-----*/
