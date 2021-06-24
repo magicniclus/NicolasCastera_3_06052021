@@ -267,6 +267,7 @@ header {
 .fonctionnement {
   margin-left: 2em;
   margin-top: 2em;
+  max-width: 50em;
 }
 
 .fonctionnement .button-1, .button-2, .button-3 {
