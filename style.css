@@ -213,14 +213,18 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60%;
+  height: 65%;
   margin-top: 1em;
 }
 
-.localisation-bottom h2, p {
+.localisation-bottom h2, h3 {
   text-align: center;
   margin: 0;
   margin-top: 0.5em;
+}
+
+.localisation-bottom h3 {
+  font-weight: lighter;
 }
 
 .button {
@@ -246,7 +250,7 @@ header {
   text-decoration: none;
 }
 
-.button p {
+.button span {
   color: white;
   margin: 0;
 }
@@ -459,8 +463,9 @@ header {
           justify-content: center;
 }
 
-.vignette-buttom-left h3 {
+.vignette-buttom-left h3, h4 {
   margin: 0;
+  text-align: start;
 }
 
 .vignette-buttom-left .buttom {
@@ -552,7 +557,7 @@ footer {
   margin-top: 0.1em;
 }
 
-.logo-text p {
+.logo-text span {
   margin: 0;
   margin-left: 0.5em;
   color: white;
