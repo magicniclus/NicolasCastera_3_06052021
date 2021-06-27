@@ -173,7 +173,7 @@ header {
     margin-top: 1em;
 }    
 
-.localisation-bottom h1, p {
+.localisation-bottom h2, p {
     text-align: center;
     margin: 0;
     margin-top: 0.5em;
@@ -275,7 +275,7 @@ header {
     display: flex;
 }
 
-.restaurants .title h1 {
+.restaurants .title h2 {
     margin: 0;
     margin-top: 1.5em;
 }
@@ -398,6 +398,11 @@ footer {
 .footer-in {
     width: 82%;
     height: 77%;
+    width: 82%;
+    height: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footer-in img {
