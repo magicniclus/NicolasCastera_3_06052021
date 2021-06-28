@@ -230,10 +230,10 @@ body {
 
 .main {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 
-.main h1 {
+.main h3 {
   margin: 0;
 }
 
@@ -398,7 +398,7 @@ header img {
           justify-content: space-between;
 }
 
-.tittle h1 {
+.tittle h3 {
   margin: 0;
   font-size: 1.9em;
   font-style: italic;
@@ -436,6 +436,7 @@ header img {
 .tittle .heart .heart-2 .fas {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(77%, #9356dc));
   background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 77%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
@@ -462,7 +463,7 @@ header img {
   opacity: 0;
 }
 
-.entrees h4, .plats h4, .desserts h4 {
+.entrees h2, .plats h2, .desserts h2 {
   font-weight: lighter;
   margin: 0;
   margin-top: 2em;
@@ -576,7 +577,7 @@ header img {
   text-overflow: initial;
 }
 
-.contener .contener-in-left .bottom h1 {
+.contener .contener-in-left .bottom h3 {
   padding-top: 0;
 }
 
@@ -603,7 +604,7 @@ header img {
   font-size: 0em;
 }
 
-.contener h1 {
+.contener h3 {
   max-height: 1em;
   white-space: nowrap;
   text-overflow: ellipsis;
