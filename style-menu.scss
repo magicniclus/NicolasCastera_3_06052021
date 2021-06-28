@@ -68,12 +68,14 @@ $box-shadow: -3px 11px 21px -11px rgba(0,0,0,0.79);
 
 @keyframes hello {
     from {
-        font-size: 0em;
+        font-size: 0;
+        opacity: 0;
         transform: rotate(0deg);
     }
 
     to {
         font-size: 1.5em;
+        opacity: 1;
         transform: rotate(360deg);
     }
 }
