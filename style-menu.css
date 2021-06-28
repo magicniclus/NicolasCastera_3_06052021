@@ -577,8 +577,13 @@ header img {
   text-overflow: initial;
 }
 
+.contener .contener-in-left .bottom .lighter {
+  font-weight: lighter;
+}
+
 .contener .contener-in-left .bottom h3 {
   padding-top: 0;
+  font-size: 15px;
 }
 
 .contener .contener-in-left .bottom .exeption {
