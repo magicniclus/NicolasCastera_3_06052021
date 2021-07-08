@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
@@ -305,7 +304,7 @@ header img {
   border-radius: 30px 30px 0 0;
 }
 
-.enchanté {
+.enchante {
   height: 15.5em;
   width: 100%;
   background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -321,7 +320,7 @@ header img {
           align-items: flex-end;
 }
 
-.enchanté .bottom-style {
+.enchante .bottom-style {
   height: 2.2em;
   width: 100%;
   background-color: #f6f6f6;
