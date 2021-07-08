@@ -560,7 +560,7 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(77%, #9356dc));
   background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 77%);
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 
