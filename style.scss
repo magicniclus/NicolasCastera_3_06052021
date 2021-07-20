@@ -183,6 +183,18 @@ header {
     background: rgb(185,185,185);
     background: linear-gradient(180deg, rgba(185,185,185,1) 0%, rgba(234,234,234,1) 8%);
     @include midbox;
+
+    input{
+        border: none;
+        font-size: large;
+        background-color: #eaeaea;
+        text-align: center;
+        width: 8em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        outline-style: none;
+    }
 }
 
 .map {
@@ -216,6 +228,10 @@ header {
     @include midbox;
     box-shadow: $box-shadow;
     text-decoration: none; 
+}
+
+.button:hover {
+    box-shadow: -3px 11px 21px -11px black;
 }
 
 .button span {

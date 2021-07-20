@@ -232,6 +232,18 @@ header {
           align-items: center;
 }
 
+.localisation-top input {
+  border: none;
+  font-size: large;
+  background-color: #eaeaea;
+  text-align: center;
+  width: 8em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  outline-style: none;
+}
+
 .map {
   margin-right: 1em;
   font-size: 1.5em;
@@ -288,6 +300,11 @@ header {
   -webkit-box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
           box-shadow: -3px 11px 21px -11px rgba(0, 0, 0, 0.79);
   text-decoration: none;
+}
+
+.button:hover {
+  -webkit-box-shadow: -3px 11px 21px -11px black;
+          box-shadow: -3px 11px 21px -11px black;
 }
 
 .button span {
